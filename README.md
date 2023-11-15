@@ -5,28 +5,25 @@ This repository contains the code of my Udacity Nanodegree capstone project "Spa
 
 # Data
 
-The data is comprised of two separate files:
+While the whole dataset for Sparkify is available on AWS, this Jupyter notebook focuses on a small subset. Since even the subset is larger than 100MB, it is included as a zip-file in the repository. To run the notebook, simply extract the data in the main folder.
 
-- *data/messages.csv* contains messages submitted by people in distress after disasters (e.g. storms, fires, earthquakes). All messages are already translated to English
-- *data/categories.csv* contains the respective categories for classifying the data (e.g. fire, cold, security)
+- mini_sparkify_event_data.zip
 
 
 # Libraries
 
 The following libraries are required to run the code and need to be installed in the virtual environment:
 
-import pandas as pd
-    import numpy as np
-    from sqlalchemy import create_engine
-    import pickle
-    import sys
-    import nltk
-    import string
-    import json
-    import plotly
-    from flask import Flask
-    import joblib
-    import string
+Library	  				    | Comments
+-------------				    | -------------
+findspark				    | Facilitates the use of PySpark without additional setup.
+pyspark 				    | Make sure that you have an updated version of JDK (Java Development Kit) installed.
+datetime                                    | -
+numpy                                       | -
+pandas                                      | -
+matplotlib                                  | -
+
+
 
 
 <br>
@@ -34,42 +31,20 @@ import pandas as pd
 
 # Description of files in repository
 
-File Name	  				| File Description
--------------				        | -------------
+File Name	  			    | File Description
+-------------				    | -------------
 README.md				    | Readme file.
-app/run.py 				    | Web app that uses the trained model.
-app/templates/go.html                       | HTML file for the classification results based on user input.
-app/templates/master.html                   | Main web app HTML.
-data/categories.csv                         | Categories data set.
-data/messages.csv                           | Messages data set.
-data/DisasterResponse.db                    | SQLite database file (output of the ETL pipeline).
-data/grid_search_results.csv                | Results of a grid search for different classification algorithms.
-data/process_data.py                        | Script to run the ETL pipeline.
-helper_code/ETL_Pipeline.ipynb              | Jupyter Notebook with ETL pipeline for testing.
-helper_code/ML_pipeline.ipynb               | Jupyter Notebook with ML pipeline for testing.
-models/classifier.pkl                       | Pickle file containing the ML pipeline output for the web app.
-models/train_classifier.py                  | ML pipeline script.
+mini_sparkify_event_data.zip 		    | Zipped data extract. Unzip locally on your machine.
+Sparkify.ipynb                              | Jupyter Notebook with the analysis, ETL pipeline and model.
+
 
 <br>
 
 
-# How to run the pipelines and web app
+# How to run the analysis on your machine
 
-1. Download the necessary NLTK resources when you run the code for the first time:
+1. Download and install an updated version of JDK
 
-        nltk.download('punkt')
-        nltk.download('stopwords')
-        nltk.download('wordnet')
-
-2. Run the ETL pipeline and specify input and output files:
+2. Unzip the data file locally
         
-        python data/process_data.py data/messages.csv data/categories.csv data/DisasterResponse.db
-
-3. Run the ML pipeline and specify input and output files:
-
-        python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-
-4. Start the web app & access the launched application in your browser via the IP address displayed in the command line editor
-
-        cd app
-        python run.py
+3. Have fun running and modifying the Jupyter Notebook :)
