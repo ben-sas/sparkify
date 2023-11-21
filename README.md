@@ -22,6 +22,7 @@ datetime                                    | -
 numpy                                       | -
 pandas                                      | -
 matplotlib                                  | -
+seaborn                                     | -
 
 
 
@@ -31,11 +32,13 @@ matplotlib                                  | -
 
 # Description of files in repository
 
-File Name	  			    | File Description
--------------				    | -------------
-README.md				    | Readme file.
+File Name	  			                | File Description
+-------------				            | -------------
+README.md				                | Readme file.
 mini_sparkify_event_data.zip 		    | Zipped data extract. Unzip locally on your machine.
-Sparkify.ipynb                              | Jupyter Notebook with the analysis, ETL pipeline and model.
+Sparkify.ipynb                          | Jupyter Notebook with the analysis, ETL pipeline and model.
+plots/                                  | Plots used for the full report.
+Sparkify_Report.pdf                     | Written report and discussion of the whole analysis and modeling process.
 
 
 <br>
@@ -43,8 +46,10 @@ Sparkify.ipynb                              | Jupyter Notebook with the analysis
 
 # How to run the analysis on your machine
 
-1. Download and install an updated version of JDK
+1. Download and install an updated version of JDK, otherwise PySpark will not work
 
-2. Unzip the data file locally
+2. Clone the repository
+
+3. Unzip the data file locally
         
-3. Have fun running and modifying the Jupyter Notebook :)
+4. Have fun running and modifying the Jupyter Notebook :)
