@@ -63,4 +63,7 @@ Sparkify_Report.pdf                     | Written report and discussion of the w
 - [Doug Steen: Precision-Recall Curves (Medium)](https://medium.com/@douglaspsteen/precision-recall-curves-d32e5b290248)
 - [GeeksForGeeks](https://medium.com/@douglaspsteen/precision-recall-curves-d32e5b290248)
 - [Stackoverflow (detailed URLs in the Jupyter Notebook)](https://stackoverflow.com/)
+- [Matthias Döring: Interpreting ROC Curves, Precision-Recall Curves, and AUCs](https://www.datascienceblog.net/post/machine-learning/interpreting-roc-curves-auc/)
+- [scikitLearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
+- [Apache Spark MLib Reference](https://spark.apache.org/docs/latest/api/python/reference/pyspark.ml.html)
 
