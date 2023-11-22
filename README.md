@@ -53,3 +53,14 @@ Sparkify_Report.pdf                     | Written report and discussion of the w
 3. Unzip the data file locally
         
 4. Have fun running and modifying the Jupyter Notebook :)
+
+<br>
+
+# Acknowledgements
+
+- [Udacity Data Scientist Nanodegree](https://www.udacity.com/enrollment/nd025/4.4.17)
+- [Sarang Narkhede: Understanding AUC-ROC Curve (Towards Data Science)](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)
+- [Doug Steen: Precision-Recall Curves (Medium)](https://medium.com/@douglaspsteen/precision-recall-curves-d32e5b290248)
+- [GeeksForGeeks](https://medium.com/@douglaspsteen/precision-recall-curves-d32e5b290248)
+- [Stackoverflow (detailed URLs in the Jupyter Notebook)](https://stackoverflow.com/)
+
